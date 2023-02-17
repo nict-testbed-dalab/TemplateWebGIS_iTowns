@@ -1,0 +1,20 @@
+{
+    "id": "土砂災害警戒区域",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_4_6_dosyakuiki/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_4_6_dosyakuiki/${z}/${x}/${y}.pbf",
+        "name": "dosyakuiki",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "土砂災害警戒区域": false
+    },
+    "folder": "地理空間情報データ 災害防災"
+}

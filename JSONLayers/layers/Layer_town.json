@@ -1,0 +1,20 @@
+{
+    "id": "町丁目境界",
+    "source": {
+        "type": "color",
+        "style": "./test_itw/layer_town.json",
+        "url": "https://geoshape.ex.nii.ac.jp/vector-adm/tile/town/${z}/${x}/${y}.pbf",
+        "crs": "EPSG:3857",
+        "format": "image/png",
+        "name": "lt",
+        "protocol": "TMS",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": {
+            "min": 2,
+            "max": 8
+        },
+        "町丁目境界": false
+    },
+    "folder": "行政境界"
+}

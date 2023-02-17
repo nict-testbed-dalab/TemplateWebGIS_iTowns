@@ -1,0 +1,43 @@
+{
+    "id": "人流(GPS)",
+    "source": {
+        "type": "color",
+        "url": "https://tb-gis-web.jgn-x.jp/api/t_people_flow_data?point_1=140.4567,36.6443&point_2=140.4567,34.360&point_3=137.4291,34.360&point_4=137.4291,36.6443&currentDate=[YYYY][MM][DD][hh][mm]",
+        "crs": "EPSG:4326",
+        "format": "application/json",
+        "protocol": "mengun",
+        "view": true,
+        
+        "opacity": 0.8,
+        "zoom": {
+            "min": 2,
+            "max": 8
+        },
+        "timeline": true,
+        "人流(GPS)": false
+    },
+    "folder": "センサーデータ【時系列】",
+    "timeslider": {
+        "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 1,
+            "hour": 0
+        },
+        "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 5,
+            "hour": 0
+        },
+        "current": {
+            "year": 2018,
+            "month": 3,
+            "day": 4,
+            "hour": 13
+        }
+    },
+    "rangebar": {
+
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "id": "都市名",
+    "source": {
+        "type": "shp",
+        "url": "http://wei:10081/tsuruta/iTownsDevelopment/data/demo/ne_110m_populated_places/ne_110m_populated_places",
+        "crs": "EPSG:3857",
+        "name": "都市名",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": {
+            "min": 2,
+            "max": 8
+        },
+        "都市名": false
+    },
+    "folder": "都市名"
+}

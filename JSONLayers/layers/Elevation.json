@@ -1,0 +1,14 @@
+{
+    "id": "DEM",
+    "source": {
+        "type": "elevation",
+        "url": "http://wei:10081/storage/data/geotiff/dem_japan_bil/${z}/${x}/${y}.bil",
+        "crs": "EPSG:4326",
+        "format": "image/x-bil;bits=32",
+        "name": "Elevation",
+        "zoom": { 
+            "min": 8, 
+            "max": 10
+        }
+    }
+}

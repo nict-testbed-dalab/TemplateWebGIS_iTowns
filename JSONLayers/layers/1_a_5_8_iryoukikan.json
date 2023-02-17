@@ -1,0 +1,20 @@
+{
+    "id": "医療機関",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_5_8_iryoukikan/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_5_8_iryoukikan/${z}/${x}/${y}.pbf",
+        "name": "iryoukikan",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "医療機関": false
+    },
+    "folder": "地理空間情報データ 施設"
+}

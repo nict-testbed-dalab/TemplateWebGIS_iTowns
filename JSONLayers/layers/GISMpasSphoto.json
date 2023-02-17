@@ -1,0 +1,16 @@
+{
+    "id": "地理院タイル(航空写真)",
+    "source": {
+        "type": "color",
+        "url": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/${z}/${x}/${y}.jpg",
+        "crs": "EPSG:3857",
+        "format": "image/jpeg",
+        "name": "GISMpasSphoto",
+        "protocol": "TMS",
+        "view": true,
+        "zoom": {
+            "min": 2,
+            "max": 18
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "id": "アメダス【時系列】",
+    "source": {
+        "type": "demographics",
+        "name": "アメダス【時系列】",
+        "crs": "EPSG:3857",
+        "protocol": "demographics",
+        "view": true,
+        "opacity": 1,
+        "zoom": { 
+            "min": 2, 
+            "max": 8
+        },
+        "アメダス【時系列】": false
+    },
+    "folder": "3Dデータ",
+    "coord": {
+        "crs": "EPSG:4326", 
+        "longitude": 138.0561795932942,
+        "latitude": 36.042840489487776, 
+        "altitude": 1000
+    },
+    "options": {
+        "tilt": 25,
+        "heading": 0,
+        "range": 50000,
+        "time": 4500,
+        "stopPlaceOnGroundAtEnd": 0 
+    },
+    "timeslider": {
+        
+    },
+    "rangebar": {
+        
+    }
+}

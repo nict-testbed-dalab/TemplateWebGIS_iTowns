@@ -1,0 +1,30 @@
+{
+  "name": "itowns_app_template",
+  "version": "0.1.0",
+  "description": "Application template of itowns",
+  "main": "main.js",
+  "author": "GEO Solutions Inc.",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NICT-STARS/GIS_dev.git"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "css-loader": "^6.7.1",
+    "itowns": "git+ssh://git@github.com:NICT-STARS/itowns.git#bundle_v2.39.0",
+    "proj4": "^2.8.0",
+    "style-loader": "^3.3.1",
+    "three": "^0.146.0",
+    "three.meshline": "^1.4.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "private": true
+}

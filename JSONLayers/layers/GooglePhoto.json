@@ -1,0 +1,16 @@
+{
+    "id": "航空写真(google)",
+    "source": {
+        "type": "color",
+        "url": "https://mt1.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}",
+        "crs": "EPSG:3857",
+        "format": "image/png",
+        "name": "GooglePhoto",
+        "protocol": "TMS",
+        "view": true,
+        "attribution": {
+            "name": "cyberjapandata",
+            "url": "http://www.openstreetmap.org/"
+        }
+    }
+}

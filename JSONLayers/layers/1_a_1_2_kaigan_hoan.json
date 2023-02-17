@@ -1,0 +1,20 @@
+{
+    "id": "海岸保全施設",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_1_2_kaigan_hoan/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_1_2_kaigan_hoan/${z}/${x}/${y}.pbf",
+        "name": "kaigan_hoan",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "海岸保全施設": false
+    },
+    "folder": "地理空間情報データ 水域"
+}

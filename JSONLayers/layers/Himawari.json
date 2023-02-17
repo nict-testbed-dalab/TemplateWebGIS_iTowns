@@ -1,0 +1,20 @@
+{
+    "id": "ひまわり【時系列】",
+    "source": {
+        "type": "color",
+        "url": "https://sc-gis.nict.go.jp/localhimawari-data/tiles/h8jp/band3/[YYYY]/[MM]/[DD]/[hh]/[mm]/${z}/${x}/${y}.png",
+        "crs": "EPSG:3857",
+        "format": "image/png",
+        "name": "himawari",
+        "protocol": "TMS",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": {
+            "min": 2,
+            "max": 8
+        },
+        "timeline": true,
+        "ひまわり【時系列】": false
+    },
+    "folder": "気象情報データ"
+}

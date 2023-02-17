@@ -1,0 +1,20 @@
+{
+    "id": "市区町村境界",
+    "source": {
+        "type": "color",
+        "style": "./test_itw/layer_city_boundary.json",
+        "url": "https://geoshape.ex.nii.ac.jp/vector-adm/tile/city/${z}/${x}/${y}.pbf",
+        "crs": "EPSG:3857",
+        "format": "image/png",
+        "name": "lcb",
+        "protocol": "TMS",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": {
+            "min": 2,
+            "max": 8
+        },
+        "市区町村境界": false
+    },
+    "folder": "行政境界"
+}

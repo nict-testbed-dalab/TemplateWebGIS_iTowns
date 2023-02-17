@@ -1,0 +1,20 @@
+{
+    "id": "津波浸水想定",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_4_7_tunami/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_4_7_tunami/${z}/${x}/${y}.pbf",
+        "name": "tunami",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "津波浸水想定": false
+    },
+    "folder": "地理空間情報データ 災害防災"
+}

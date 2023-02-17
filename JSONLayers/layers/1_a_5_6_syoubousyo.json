@@ -1,0 +1,20 @@
+{
+    "id": "消防署",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_5_6_syoubousyo/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_5_6_syoubousyo/${z}/${x}/${y}.pbf",
+        "name": "syoubousyo",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "消防署": false
+    },
+    "folder": "地理空間情報データ 施設"
+}

@@ -1,0 +1,20 @@
+{
+    "id": "土地利用詳細メッシュ",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_3_4_totiriyousyousai/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_3_4_totiriyousyousai/${z}/${x}/${y}.pbf",
+        "name": "totiriyousyousai",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "土地利用詳細メッシュ": false
+    },
+    "folder": "地理空間情報データ 土地利用"
+}

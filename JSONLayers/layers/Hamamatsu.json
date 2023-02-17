@@ -1,0 +1,30 @@
+{
+    "id": "点群データ",
+    "source": {
+        "type": "color",
+        "url": "../data/pointcloud/29XXX00010002-3_4978/",
+        "crs": "EPSG:4978",
+        "format": "image/png",
+        "name": "himawari",
+        "protocol": "Potree",
+        "view": true,
+        "opacity": 0.8,
+        "file": "cloud.js",
+        "timeline": false,
+        "点群データ": false
+    },
+    "folder": "センサーデータ【時系列】",
+    "coord": {
+        "crs": "EPSG:4326", 
+        "longitude": 137.7249373971777, 
+        "latitude": 34.71152020409946, 
+        "altitude": 0
+    },
+    "options": {
+        "tilt": 30,
+        "heading": -0.000022280057123680308,
+        "range": 200.00000001701,
+        "time": 4500,
+        "stopPlaceOnGroundAtEnd": 0 
+    }
+}

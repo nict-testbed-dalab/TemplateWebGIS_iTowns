@@ -1,0 +1,65 @@
+{
+    "id": "人口グラフ【時系列】",
+    "source": {
+        "type": "demographics",
+        "name": "人口グラフ【時系列】",
+        "crs": "EPSG:3857",
+        "protocol": "demographics",
+        "view": true,
+        "opacity": 1,
+        "zoom": { 
+            "min": 2, 
+            "max": 8
+        },
+        "人口グラフ【時系列】": false
+    },
+    "folder": "3Dデータ",
+    "coord": {
+        "crs": "EPSG:4326", 
+        "longitude": 139.745556, 
+        "latitude": 35.658581, 
+        "altitude": 868
+    },
+    "options": {
+        "tilt": 25,
+        "heading": 40,
+        "range": 5000,
+        "time": 4500,
+        "stopPlaceOnGroundAtEnd": 0 
+    },
+    "timeslider": {
+        "start": {
+            "year": 2000,
+            "month": 0,
+            "day": 1,
+            "hour": 0
+        },
+        "end": {
+            "year": 2026,
+            "month": 0,
+            "day": 1,
+            "hour": 0
+        },
+        "current": {
+            "year": 2018,
+            "month": 0,
+            "day": 1,
+            "hour": 0
+        }
+    },
+    "rangebar": {
+        "start": {
+            "year": 2003,
+            "month": 0,
+            "day": 1,
+            "hour": 0
+        },
+        "end": {
+            "year": 2023,
+            "month": 0,
+            "day": 1,
+            "hour": 0
+        }
+    },
+    "zoomRange": 0
+}

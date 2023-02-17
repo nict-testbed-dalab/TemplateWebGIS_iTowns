@@ -1,0 +1,19 @@
+{
+    "id": "matsuyama_bldg",
+    "source": {
+        "type": "color",
+        "url": "http://wei:10081/data/PLATEAU/matsuyama/bldg_low_resolution/tileset.json",
+        "name": "bldg_tile",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "three",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "matsuyama_bldg": false
+    },
+    "folder": "3Dデータ"
+}

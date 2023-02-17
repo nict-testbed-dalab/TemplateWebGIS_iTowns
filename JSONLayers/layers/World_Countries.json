@@ -1,0 +1,17 @@
+{
+    "id": "国境",
+    "source": {
+        "type": "shp",
+        "url": "http://wei:10081/tsuruta/iTownsDevelopment/data/demo/ne_110m_admin_0_countries/ne_110m_admin_0_countries",
+        "crs": "EPSG:3857",
+        "name": "国境",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": {
+            "min": 2,
+            "max": 8
+        },
+        "国境": false
+    },
+    "folder": "国境"
+}

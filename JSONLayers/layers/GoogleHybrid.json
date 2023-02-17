@@ -1,0 +1,16 @@
+{
+    "id": "航空写真(googleHybrid)",
+    "source": {
+        "type": "color",
+        "url": "https://mt1.google.com/vt/lyrs=y&x=${x}&y=${y}&z=${z}",
+        "crs": "EPSG:3857",
+        "format": "image/png",
+        "name": "GoogleHybrid",
+        "protocol": "TMS",
+        "view": false,
+        "attribution": {
+            "name": "cyberjapandata",
+            "url": "http://www.openstreetmap.org/"
+        }
+    }
+}

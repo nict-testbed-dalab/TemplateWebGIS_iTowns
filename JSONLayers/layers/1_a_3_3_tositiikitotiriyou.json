@@ -1,0 +1,20 @@
+{
+    "id": "都市地域土地利用細分メッシュ",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_3_3_tositiikitotiriyou/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_3_3_tositiikitotiriyou/${z}/${x}/${y}.pbf",
+        "name": "tositiikitotiriyou",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "都市地域土地利用細分メッシュ": false
+    },
+    "folder": "地理空間情報データ 土地利用"
+}

@@ -1,0 +1,20 @@
+{
+    "id": "湖沼",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_1_5_dam/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_1_5_dam/${z}/${x}/${y}.pbf",
+        "name": "kosyou",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "湖沼": false
+    },
+    "folder": "地理空間情報データ 水域"
+}

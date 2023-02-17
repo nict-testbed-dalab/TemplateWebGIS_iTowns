@@ -1,0 +1,20 @@
+{
+    "id": "市区町村役場",
+    "source": {
+        "type": "color",
+        "style": "http://wei:10081/data/vectortile/1_a_5_3_yakuba/style.json",
+        "url": "http://wei:10081/data/vectortile/1_a_5_3_yakuba/${z}/${x}/${y}.pbf",
+        "name": "yakuba",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "V",
+        "view": true,
+        "opacity": 0.8,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "市区町村役場": false
+    },
+    "folder": "地理空間情報データ 施設"
+}
