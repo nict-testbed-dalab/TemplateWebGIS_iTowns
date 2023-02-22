@@ -1,4 +1,5 @@
 import {formatDate} from "../layer/layer";
+import {setupSyataiLagend} from "../legend/legend";
 
 /**
  * 前処理のメソッドおよび関数
@@ -299,6 +300,7 @@ export function setupPreprocess(view) {
                     }
                     
                     addMF_JSON(view, syataiLagend);
+                    setupSyataiLagend(source_id, syataiLagend, temp_response_json.target_data, amedas_rain, amedas_temp, amedas_snow)
                 
                 }else{
                     alert("対象データがありませんでした。");

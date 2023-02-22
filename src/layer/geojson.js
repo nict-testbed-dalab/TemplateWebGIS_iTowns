@@ -53,7 +53,7 @@ export function createObject(itowns, globeView, endtime, starttime, searchdata, 
                 speed = searchdata[s][3]; // スピード
                 objColor = searchdata[s][6]; //色
 
-                let bargraph_height = searchdata[s][3] * 500 + 10;
+                let bargraph_height = searchdata[s][3] * 10 + 10;
 
                 let newTime = toDate(String(endtime));
                 let oldTime = toDate(String(searchdata[s][1]));
@@ -215,7 +215,7 @@ export function createObject(itowns, globeView, endtime, starttime, searchdata, 
                 if(shape !== "3dbargraph") {
 
                     // 棒グラフ表示
-                    let Cylinder_height = speed * 100;
+                    let Cylinder_height = speed * 30 + 10;
                     let Cylinder_geometry = new THREE.CylinderGeometry(10, 10, Cylinder_height, 30);
                     let Cylinder_material;
 
@@ -368,11 +368,14 @@ export function setupJson(data) {
     // その他設定情報
     let objEnv = {};
     objEnv.end_date    = data.end_date;
+    objEnv.granularity    = data.granularity;
     objEnv.map_bearing = data.map_bearing;
     objEnv.map_center  = data.map_center;
     objEnv.map_pitch   = data.map_pitch;
     objEnv.map_zoom    = data.map_zoom;
+    objEnv.proc_type    = data.proc_type;
     objEnv.start_date  = data.start_date;
+    objEnv.target_data  = data.target_data;
     objEnv.source_id   = data.source_id;
     sessionStorage.setItem('env_json', JSON.stringify(objEnv));
 }
@@ -569,6 +572,9 @@ export function setupAmedasJson(data) {
     objEnv.start_date  = data.start_date;
     objEnv.source_id   = data.source_id;
     objEnv.target_data   = data.target_data;
+    objEnv.granularity    = data.granularity;
+    objEnv.proc_type    = data.proc_type;
+
     sessionStorage.setItem('env_json', JSON.stringify(objEnv));
 }
 

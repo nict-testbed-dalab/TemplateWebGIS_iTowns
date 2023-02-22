@@ -95,12 +95,14 @@ let DragNDrop = (function _() {
                             data.source = {};
                             data.source.protocol = "3do";
                             setupJson(data);
+                            chageValue(file, data.source_id);
                         } else if(data.source_id === "json") {
                             // 何もしない
                         } else if(data.source_id === "layer_amedas") {
                             data.source = {};
                             data.source.protocol = "3do";
                             setupAmedasJson(data);
+                            chageValue(file, data.source_id);
                         } else {
                             data.source = {};
                             data.source.protocol = "3do";
@@ -187,9 +189,6 @@ let DragNDrop = (function _() {
 
                                     // 新形式のmf-jsonに対応するため修正
                                     case "3do":
-                                        let result_inner = document.getElementById('prepro_file_name');
-                                        result_inner.innerHTML = file.name;
-
                                         addMF_JSON(_view, data.source_id, syataiLagend, data.target_data, amedas_rain, amedas_temp, amedas_snow);
                                         break;
 
@@ -466,4 +465,108 @@ function addTravelJson(_view, data) {
     cameraHelpers.add(helper);
     _view.notifyChange();
     animateCamera(travelSteps);
+}
+
+function chageValue(file, dataSourceID) {
+    if(dataSourceID === "layer_amedas") {
+        $("#prepro_db_data_type").val("");
+        $("#prepro_db_data_type").val("layer_amedas");
+
+        $('select#col_name option').remove();
+        let options = '<option value="precipitation24h">24時間降雨量</option><option value="temp">気温</option><option value="snow">積雪深</option>';
+        $("#col_name").append(options);
+    } else if(dataSourceID === "layer_garbagetruck_trajectory" || dataSourceID === "layer_garbagetruck") {
+        $("#prepro_db_data_type").val("");
+        $("#prepro_db_data_type").val("layer_garbagetruck");
+
+        $('select#col_name option').remove();
+        let options = '<option value="speed">速度</option><option value="pm25">PM2.5</option>';
+        $("#col_name").append(options);
+    } else {
+
+    }
+
+    let col_name = document.getElementById('col_name'); // 取得項目
+    let start_date = document.getElementById('start_date'); // 開始
+    let end_date = document.getElementById('end_date'); // 終了
+    let proc_type = document.getElementById('proc_type'); // リサンプル
+    let granularity_val = document.getElementById('granularity_val'); // 時間粒度(数字)
+    let granularity = document.getElementById('granularity'); // 時間粒度(単位)
+    let prepro_file_name = document.getElementById('prepro_file_name'); // ファイル名
+
+    let env_data = JSON.parse(sessionStorage.getItem('env_json'));
+
+    getOptionsValue(col_name, env_data.target_data); // 取得項目
+    start_date.value = getTimeValue(env_data.start_date); // 開始
+    end_date.value = getTimeValue(env_data.end_date); // 終了
+    getOptionsValue(proc_type, env_data.proc_type); // リサンプル
+
+    // 時間粒度(数字)
+    let result = env_data.granularity.match(/[0-9]/g);
+    if(result) {
+        granularity_val.value = env_data.granularity.replace(/[^0-9]/g, "");
+    } else {
+        granularity_val.value = 1;
+    }
+
+    getOptionsValue(granularity, env_data.granularity.replace(/[^a-z]/g, "")); // 時間粒度(単位)
+    prepro_file_name.innerHTML = file.name; // ファイル名
+}
+
+function getOptionsValue(optionValue, data) {
+    //HTMLCollectionを配列に変換してループ
+    Array.from(optionValue.options).forEach(function(option) {
+        if(data === "spline" || data === "linear" || data === "avg" || data === "max" || data === "min" ) {
+            checkProcType(data);
+        } else {
+            // 何もしない
+        }
+
+        if(option.value === data) {
+            option.selected = true;
+        } else {
+            // 何もしない
+        }
+    });
+}
+
+function getTimeValue(time) {
+    let time_yyyy = time.slice(0, 4);
+    let time_MM = time.slice(4, 6);
+    let time_DD = time.slice(6, 8);
+    let time_hh = time.slice(8, 10);
+    let time_m = time.slice(10, 12);
+
+    let getTime = time_yyyy + "-" + time_MM + "-" + time_DD + "T" + time_hh + ":" + time_m;
+
+    return getTime;
+}
+
+function checkProcType(type) {
+    let options;
+    $('select#granularity option').remove();
+
+    // アメダスの時
+    if($("#prepro_db_data_type").val() === "layer_amedas") {
+        if(type === "spline" || type === "linear") {
+            options = '<option value="sec">秒</option><option value="minute">分</option>';
+            $("#granularity").append(options);
+        } else {
+            options = '<option value="minute">分</option><option value="hour" selected="">時間</option><option value="day">日</option><option value="month">月</option><option value="year">年</option>';
+            $("#granularity").append(options);
+        }
+
+    // 日進市の時
+    } else if($("#prepro_db_data_type").val() === "layer_garbagetruck") {
+        if(type === "spline" || type === "linear") {
+            options = '<option value="sec">秒</option>';
+            $("#granularity").append(options);
+
+        } else {
+            options = '<option value="minute">分</option><option value="hour" selected="">時間</option><option value="day">日</option><option value="month">月</option><option value="year">年</option>';
+            $("#granularity").append(options);
+        }
+    } else {
+        // 何もしない
+    }
 }

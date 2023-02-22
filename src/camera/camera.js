@@ -4,8 +4,9 @@ import * as fnc from "../gui/timeline/fnc";
 
 // カメラの初期値
 export let placement = {
-  coord: new itowns.Coordinates("EPSG:4326", 138.06381, 35.66447, 5000000),
-  range: 5000000,
+  // coord: new itowns.Coordinates("EPSG:4326", 138.06381, 35.66447, 5000000),
+  coord: new itowns.Coordinates("EPSG:4326", 139.76652062736588, 35.68129033294029, 30000),
+  // range: 5000000,
 };
 
 /* ■Camera */
