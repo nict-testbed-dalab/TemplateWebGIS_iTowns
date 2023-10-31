@@ -332,7 +332,15 @@ export function setupJson(data) {
             objData.push(data["data_array"][i]["features"][0]["geometry"]["coordinates"][j]); // 0:緯度・経度
             objData.push(data["data_array"][i]["features"][0]["properties"]["datetime"][j]); // 1:時間
             objData.push(data["data_array"][i]["features"][0]["properties"]["direction"][j]); // 2:方向
-            objData.push(data["data_array"][i]["features"][0]["properties"]["speed"][j]); // 3:スピード
+
+            if(data["data_array"][i]["features"][0]["properties"]["speed"]) {              // 3:スピード
+                objData.push(data["data_array"][i]["features"][0]["properties"]["speed"][j]); 
+            } else if(data["data_array"][i]["features"][0]["properties"]["pm25"]) {
+                objData.push(data["data_array"][i]["features"][0]["properties"]["pm25"][j]);
+            } else {
+
+            };
+            
             objData.push(data["data_array"][i]["features"][0]["properties"]["identifier"]); // 4:車種
             
             // 5:高さ情報があれば配列にいれる、無ければ固定値を入れる
