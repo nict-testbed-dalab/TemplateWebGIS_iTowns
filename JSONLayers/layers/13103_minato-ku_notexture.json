@@ -1,0 +1,19 @@
+{
+    "id": "港区(テクスチャーなし)",
+    "source": {
+        "type": "color",
+        "url": "/api/data/PLATEAU/tokyo/3DTiles/13103_minato-ku_notexture/tileset.json",
+        "name": "bldg_tile",
+        "crs": "EPSG:3857",
+        "format": "application/json",
+        "protocol": "three",
+        "view": true,
+        "opacity": 1,
+        "zoom": { 
+            "min": 5,
+            "max": 13
+        },
+        "港区(テクスチャーなし)": false
+    },
+    "folder": "3Dデータ"
+}

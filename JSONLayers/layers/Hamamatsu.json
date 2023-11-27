@@ -2,13 +2,13 @@
     "id": "点群データ",
     "source": {
         "type": "color",
-        "url": "../data/pointcloud/29XXX00010002-3_4978/",
+        "url": "/storage/data/pointcloud/29XXX00010002-3_4978/",
         "crs": "EPSG:4978",
         "format": "image/png",
         "name": "himawari",
         "protocol": "Potree",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "file": "cloud.js",
         "timeline": false,
         "点群データ": false

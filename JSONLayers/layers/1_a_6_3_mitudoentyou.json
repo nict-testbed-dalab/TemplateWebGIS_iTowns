@@ -2,14 +2,14 @@
     "id": "道路密度・道路延長メッシュ",
     "source": {
         "type": "color",
-        "style": "http://wei:10081/data/vectortile/1_a_6_3_mitudoentyou/style.json",
-        "url": "http://wei:10081/data/vectortile/1_a_6_3_mitudoentyou/${z}/${x}/${y}.pbf",
+        "style": "/storage/data/vectortile/1_a_6_3_mitudoentyou/latest/style.json",
+        "url": "/api/data/vectortile/1_a_6_3_mitudoentyou/latest/${z}/${x}/${y}.pbf",
         "name": "mitudoentyou",
         "crs": "EPSG:3857",
         "format": "application/json",
         "protocol": "V",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": { 
             "min": 5,
             "max": 13

@@ -2,14 +2,14 @@
     "id": "面群データ",
     "source": {
         "type": "color",
-        "url": "../data/[YYYY][MM][DD][hh]00.json",
+        "url": "./data/[YYYY][MM][DD][hh]00.json",
         "crs": "EPSG:4326",
         "format": "application/json",
         "name": "lcb",
         "protocol": "mengun",
         "view": true,
         
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": {
             "min": 2,
             "max": 8

@@ -2,14 +2,14 @@
     "id": "公共施設",
     "source": {
         "type": "color",
-        "style": "http://wei:10081/data/vectortile/1_a_5_4_koukyousisetu/style.json",
-        "url": "http://wei:10081/data/vectortile/1_a_5_4_koukyousisetu/${z}/${x}/${y}.pbf",
+        "style": "/storage/data/vectortile/1_a_5_4_koukyousisetu/latest/style.json",
+        "url": "/api/data/vectortile/1_a_5_4_koukyousisetu/latest/${z}/${x}/${y}.pbf",
         "name": "koukyousisetu",
         "crs": "EPSG:3857",
         "format": "application/json",
         "protocol": "V",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": { 
             "min": 5,
             "max": 13

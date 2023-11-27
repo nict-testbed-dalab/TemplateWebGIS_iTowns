@@ -2,17 +2,17 @@
     "id": "学校",
     "source": {
         "type": "color",
-        "style": "http://wei:10081/data/vectortile/1_a_5_11_gakkou/style.json",
-        "url": "http://wei:10081/data/vectortile/1_a_5_11_gakkou/${z}/${x}/${y}.pbf",
+        "style": "/storage/data/vectortile/1_a_5_11_gakkou/latest/style.json",
+        "url": "/api/data/vectortile/1_a_5_11_gakkou/latest/${z}/${x}/${y}.pbf",
         "name": "gakkou",
         "crs": "EPSG:3857",
         "format": "application/json",
         "protocol": "V",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": { 
-            "min": 0,
-            "max": 18
+            "min": 5,
+            "max": 13
         },
         "学校": false
     },

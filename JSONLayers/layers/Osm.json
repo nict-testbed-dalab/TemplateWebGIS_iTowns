@@ -2,12 +2,13 @@
     "id": "OSM(ラスター)",
     "source": {
         "type": "color",
-        "url": "https://tile.openstreetmap.jp/${z}/${x}/${y}.png",
+        "url": "/api/osmr/styles/osm-bright-ja/${z}/${x}/${y}.png",
         "crs": "EPSG:3857",
         "format": "image/png",
         "name": "GoogleHybrid",
         "protocol": "TMS",
         "view": false,
+        "opacity": 1,
         "zoom": {
             "min": 2,
             "max": 16

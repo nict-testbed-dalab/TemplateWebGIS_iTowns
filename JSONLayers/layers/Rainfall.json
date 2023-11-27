@@ -2,7 +2,7 @@
     "id": "降水【時系列】",
     "source": {
         "type": "color",
-        "url": "https://sc-gis.nict.go.jp/localhimawari-data/tiles/wni/[YYYY][MM][DD]/[hh][mm]/${z}_${x}_${y}.png",
+        "url": "/api/weather_wni/wni/[YYYY][MM][DD]/[hh][mm]/${z}/${x}/${y}.png",
         "crs": "EPSG:3857",
         "format": "image/png",
         "name": "Rainfall",
@@ -16,5 +16,5 @@
         "timeline": true,
         "降水【時系列】": false
     },
-    "folder": "気象情報データ"
+    "folder": "気象情報データベース"
 }

@@ -2,7 +2,7 @@
     "id": "日射【時系列】",
     "source": {
         "type": "color",
-        "url": "https://sc-gis.nict.go.jp/localhimawari-data/tiles/amjp/dwn.sw.flx.sfc/[YYYY]/[MM]/[DD]/[hh]/[mm]/${z}/${x}/${y}.png",
+        "url": "/api/weather_amjp_veda02_sshfs/dwn.sw.flx.sfc/[YYYY]/[MM]/[DD]/[hh]/[mm]/${z}/${x}/${y}.png",
         "crs": "EPSG:3857",
         "format": "image/png",
         "name": "Sun",
@@ -16,5 +16,5 @@
         "timeline": true,
         "日射【時系列】": false
     },
-    "folder": "気象情報データ"
+    "folder": "気象情報データベース"
 }

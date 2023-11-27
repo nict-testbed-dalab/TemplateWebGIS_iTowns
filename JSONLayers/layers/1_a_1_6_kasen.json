@@ -2,14 +2,14 @@
     "id": "河川",
     "source": {
         "type": "color",
-        "style": "http://wei:10081/data/vectortile/1_a_1_6_kasen/style.json",
-        "url": "http://wei:10081/data/vectortile/1_a_1_6_kasen/${z}/${x}/${y}.pbf",
+        "style": "/storage/data/vectortile/1_a_1_6_kasen/latest/style.json",
+        "url": "/api/data/vectortile/1_a_1_6_kasen/latest/${z}/${x}/${y}.pbf",
         "name": "kasen",
         "crs": "EPSG:3857",
         "format": "application/json",
         "protocol": "V",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": { 
             "min": 5,
             "max": 13

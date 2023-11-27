@@ -2,20 +2,20 @@
     "id": "ひまわり雲データ",
     "source": {
         "type": "color",
-        "url": "../data/pointcloud/amaterass_color/",
+        "url": "/storage/data/pointcloud/amaterass_color/",
         "crs": "EPSG:4978",
         "format": "image/png",
         "name": "himawari",
         "protocol": "Potree",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "file": "cloud.js",
         "timeline": true,
         "ひまわり雲データ": false
     },
     "folder": "点群データ",
     "coord": {
-        
+    
     },
     "options": {
         "tilt": 30,

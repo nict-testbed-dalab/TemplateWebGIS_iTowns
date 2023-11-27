@@ -1,19 +1,19 @@
 {
-    "id": "Kitakyusyu_bldg",
+    "id": "港区",
     "source": {
         "type": "color",
-        "url": "http://wei:10081/data/PLATEAU/kitakyusyu/bldg_low_resolution/tileset.json",
+        "url": "/api/data/PLATEAU/tokyo/3DTiles/13103_minato-ku/tileset.json",
         "name": "bldg_tile",
         "crs": "EPSG:3857",
         "format": "application/json",
         "protocol": "three",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": { 
             "min": 5,
             "max": 13
         },
-        "Kitakyusyu_bldg": false
+        "港区": false
     },
     "folder": "3Dデータ"
 }

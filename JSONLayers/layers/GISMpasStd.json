@@ -2,12 +2,13 @@
     "id": "地理院タイル(標準)",
     "source": {
         "type": "color",
-        "url": "https://cyberjapandata.gsi.go.jp/xyz/std/${z}/${x}/${y}.png",
+        "url": "/api/std/${z}/${x}/${y}.png",
         "crs": "EPSG:3857",
         "format": "image/jpeg",
         "name": "GISMpasStd",
         "protocol": "TMS",
         "view": false,
+        "opacity": 1,
         "zoom": {
             "min": 2,
             "max": 18

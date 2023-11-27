@@ -1,19 +1,19 @@
 {
-    "id": "matsuyama_bldg",
+    "id": "橋梁オブジェクト",
     "source": {
         "type": "color",
-        "url": "http://wei:10081/data/PLATEAU/matsuyama/bldg_low_resolution/tileset.json",
+        "url": "/storage/data/PLATEAU/tokyo/3DTiles/tokyo23ku_bridge/tileset.json",
         "name": "bldg_tile",
         "crs": "EPSG:3857",
         "format": "application/json",
         "protocol": "three",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": { 
             "min": 5,
             "max": 13
         },
-        "matsuyama_bldg": false
+        "橋梁オブジェクト": false
     },
     "folder": "3Dデータ"
 }

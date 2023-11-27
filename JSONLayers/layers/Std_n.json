@@ -2,12 +2,13 @@
     "id": "地理院Vタイル",
     "source": {
         "type": "color",
-        "style": "http://wei:10081/tsuruta/iTownsDevelopment/data/std_n.json",
+        "style": "./data/std_n.json",
         "crs": "EPSG:3857",
         "format": "image/jpeg",
         "name": "std_n",
         "protocol": "V",
         "view": false,
+        "opacity": 1,
         "attribution": {
             "name": "OpenStreetMap",
             "url": "http://www.openstreetmap.org/"

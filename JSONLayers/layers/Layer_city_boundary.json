@@ -1,20 +1,20 @@
 {
-    "id": "市区町村境界",
+    "id": "市区町村境界【時系列】",
     "source": {
         "type": "color",
-        "style": "./test_itw/layer_city_boundary.json",
-        "url": "https://geoshape.ex.nii.ac.jp/vector-adm/tile/city/${z}/${x}/${y}.pbf",
+        "style": "https://tb-gis-web.jgn-x.jp/mapbox_sample/Mapbox_map/json/layer_city_boundary.json",
+        "url": "/api/jp_city/20200101/${z}/${x}/${y}.pbf",
         "crs": "EPSG:3857",
         "format": "image/png",
         "name": "lcb",
-        "protocol": "TMS",
+        "protocol": "V",
         "view": true,
-        "opacity": 0.8,
+        "opacity": 1,
         "zoom": {
             "min": 2,
-            "max": 8
+            "max": 13
         },
-        "市区町村境界": false
+        "市区町村境界【時系列】": false
     },
     "folder": "行政境界"
 }
