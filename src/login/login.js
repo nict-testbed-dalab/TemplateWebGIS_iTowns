@@ -32,7 +32,7 @@ let auth0 = null;
 let accessToken = "";
 
 const app_path = "itowns_template/";
-// const app_path = "";
+const app_year = "/2022/";
 
 /**
  * Starts the authentication flow
@@ -44,7 +44,7 @@ const login = async (targetUrl) => {
     let op_temp = window.location.origin
 
     if(app_path != ""){
-      op_temp = window.location.origin + "/" + app_path
+      op_temp = window.location.origin + app_year + app_path
     }
 
     const options = {
@@ -74,7 +74,7 @@ const logout = () => {
         console.log("Logging out");
         // returnTo: window.location.origin
         auth0.logout({
-            returnTo: window.location.origin + "/" + app_path
+          returnTo: window.location.origin + app_year + app_path
         });
     } catch (err) {
         console.log("Log out failed", err);
