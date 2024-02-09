@@ -64,6 +64,19 @@ function setupButtons(view) {
 
         $("#prepro_controller").removeClass("hidden");
     };
+
+    // データ取得(バス)
+    document.getElementById("get_bus").onclick = function() {
+
+        $("#prepro_db_data_type").val("");
+        $("#prepro_db_data_type").val("layer_bus");
+
+        $('select#col_name option').remove();
+        let options = '<option value="speed">速度</option><option value="pm25">PM2.5</option>';
+        $("#col_name").append(options);
+
+        $("#prepro_controller").removeClass("hidden");
+    };
 }
 
 //画面キャプチャ
